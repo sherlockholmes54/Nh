@@ -1,0 +1,6 @@
+{
+  "name": "Keystone Study & Task Studio",
+  "description": "Comprehensive study session tracker, task & assignment manager, idea incubator, flashcard active recall, and academic analytics hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

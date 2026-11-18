@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="prismGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#4338ca" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Full bleed Background for Maskable Icon (safe zone is 80% central circle) -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+
+  <!-- Content scaled slightly down (~80%) to sit comfortably within the safe zone -->
+  <g transform="translate(51.2, 51.2) scale(0.8)">
+    <!-- Glow orb -->
+    <circle cx="256" cy="230" r="160" fill="url(#glowGrad)" filter="url(#shadow)"/>
+
+    <!-- Keystone Architectural Core / Study Emblem -->
+    <polygon points="186,130 326,130 356,220 156,220" fill="url(#prismGrad)" filter="url(#shadow)"/>
+    <polygon points="156,220 356,220 256,380" fill="#4338ca"/>
+    <polygon points="186,130 256,130 256,380 156,220" fill="#6366f1" fill-opacity="0.35"/>
+
+    <!-- Center Star / Sparkle in Keystone -->
+    <path d="M256,170 L264,198 L292,206 L264,214 L256,242 L248,214 L220,206 L248,198 Z" fill="#ffffff"/>
+
+    <!-- Bottom open book / wings base -->
+    <path d="M166,350 Q256,320 346,350 Q310,380 256,365 Q202,380 166,350 Z" fill="#c7d2fe" fill-opacity="0.9"/>
+    <circle cx="256" cy="315" r="5" fill="#facc15"/>
+  </g>
+</svg>
